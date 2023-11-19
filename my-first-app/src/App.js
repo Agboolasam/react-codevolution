@@ -10,7 +10,10 @@ function App() {
     <div className="App">
       <Hello />
       <Welcome />
-      <Helloworld />
+      <Welcome name="agboola" />
+      <Helloworld name="Samson" heroName="Swiftyhands">
+        <p> this is a child prop in hello world </p> <button> Active </button>{" "}
+      </Helloworld>{" "}
       <Withoutjsx />
     </div>
   );

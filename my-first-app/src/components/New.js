@@ -1,11 +1,17 @@
 import React from "react";
 
-function Helloworld() {
+function Helloworld(props) {
+  console.log(props);
   return (
     <div>
-      <h4> hello, this is another functional component </h4>{" "}
+      <h4>
+        {" "}
+        hello {props.name}, this is another functional component{" "}
+        <p> My heroname is {props.heroName} </p>{" "}
+      </h4>{" "}
+      {props.children}{" "}
     </div>
-  );
+  ); // the props.children renders what the children stated in the tag from app.js
 } // this is for jsx
 
 function Withoutjsx() {
